@@ -1,4 +1,4 @@
-class Bus
+class Person
 
   attr_reader :name, :age
 
@@ -6,6 +6,7 @@ class Bus
     @name = name
     @age = age
   end
+
 
 
 end
