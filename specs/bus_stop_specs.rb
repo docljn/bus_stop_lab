@@ -24,5 +24,11 @@ class TestBusStop < MiniTest::Test
     assert_equal(1, @bus_stop.num_of_passengers_in_queue)
   end
 
+  def test_bus_stop_queue_to_be_emptied
+    @bus_stop.arrive(@person1)
+    @bus_stop.empty()
+    assert_equal(0, @bus_stop.queue.length)
+  end
+
 
 end
